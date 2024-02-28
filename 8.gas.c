@@ -12,12 +12,12 @@ sensorValue =analogRead(MQ2pin);
 if(sensorValue<=170){
 digitalWrite(LED,LOW);
 Serial.print(sensorValue);
-Serial.println("SENSOR VALUE”);
+Serial.println("SENSOR VALUE" );
 }
 else
 {
 digitalWrite(LED,HIGH);
-Serial.println("SMOKE DETECTED);
+Serial.println("SMOKE DETECTED");
 Serial.println(sensorValue);
 }
 delay(1000);
